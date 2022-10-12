@@ -1,0 +1,72 @@
+.container{
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 30px;
+    text-align: center;
+    padding: 30px;
+    
+}
+.boxin1,.boxin2,.boxin3,.boxin4{
+    
+    border-radius: 30px;
+    padding: 20px;
+    border: 2px solid rgba(212, 211, 211, 0.61);
+    margin: 20px;
+    background-color: rgba(122, 116, 116, 0.452);
+    
+}
+.boxin1:hover,.boxin2:hover,.boxin3:hover,.boxin4:hover{
+    background-color:  rgba(31, 26, 26, 0.452);
+
+}
+.boxin1{
+    grid-area: boxin1;
+}
+.boxin2{
+    grid-area: boxin2;
+}
+.boxin3{
+    grid-area: boxin3;
+}
+.boxin4{
+    grid-area: boxin4;
+}
+
+.box{
+
+    border-radius: 30px;
+    padding: 20px;
+    border: 2px solid rgba(212, 211, 211, 0.61);
+    margin: 20px;
+    text-align: center;
+    background-color: rgba(122, 116, 116, 0.137);
+
+
+    display: grid;
+    grid-template-columns: 40fr 40fr ;
+    grid-template-rows: 40fr 40fr;
+    grid-template-areas: "boxin1 boxin2"
+    "boxin3 boxin4";
+
+
+    
+    font-weight: bold;
+}
+.links{
+    text-decoration: underline;
+    cursor: pointer;
+    
+}
+
+@media only screen and (max-width:700px){
+    .box{
+        grid-template-columns: 40fr ;
+        
+        grid-template-areas: 
+        "boxin1" 
+        "boxin2"
+        "boxin3" 
+        "boxin4";
+    }
+    
+}

@@ -1,0 +1,34 @@
+
+.main {
+    min-height: 10vh;
+    padding: 02rem ;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container {
+    border: 2px solid rgba(212, 211, 211, 0.61);
+    border-radius: 20px;
+    padding: 1.2rem;
+    background-color: rgba(122, 116, 116, 0.137);
+
+  }
+  .blog{
+    background-color: rgba(122, 116, 116, 0.452);
+    border-radius: 20px;
+    padding: 23px;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+  .blog:hover{
+    background-color:  rgba(31, 26, 26, 0.452);
+  }
+  .blogItem{
+    cursor: pointer;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+  }
+  
+ 
