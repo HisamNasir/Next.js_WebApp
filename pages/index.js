@@ -2,12 +2,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
 
-    <div className={styles.container}>
+    <div className=" px-1">
      
       <Head>
         <title>Hisam Nasir</title>
@@ -16,25 +15,25 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
-      <main className={styles.main}>
+      <main className=" min-h-screen  flex-1 flex p-16 0 items-center flex-col">
       
-        <div className={styles.imgwrap}>
-        <span className='header-image'><Image className={styles.myImg} src='/homeimg.png' layout='fill' alt="dak"/></span>
-        <h1 className={styles.title}>
+        <div className=" w-4/5 relative px-2 py-52">
+        <span className=' z-0'><Image className=" rounded-3xl opacity-30 " src='/homeimg.png' layout='fill' alt="dak"/></span>
+        <h1 className=" relative text-center z-10 text-5xl py-3 font-bold">
            React Based Article
         </h1>
 
-        <p className={styles.description}>
+        <p className=" text-center relative z-10 py-3 text-2xl">
          A project by Hisam made in Next.js (framework)
         </p>
         </div>
         
-        <h2 className={styles.polularBlog}>Popular Blogs</h2>
-<div className={styles.popular}>
+        <h2 className=" text-xl font-sans m-9">Popular Blogs</h2>
+<div className=" border border-stone-300 p-5 bg-stone-600 rounded-3xl">
   
-<div className={styles.blogs}>
+          <div className="my-4 cursor-pointer p-5 bg-stone-500 rounded-3xl hover:bg-stone-700">
           
-          <div className={styles.blogitem}>
+          <div className=" text-2xl">
             <h3>How to learn JavaScript in 2022?</h3>
           </div>
           <p>
@@ -45,9 +44,9 @@ export default function Home() {
           </p>
         </div>
 
-        <div className={styles.blogs}>
+        <div className="my-4 cursor-pointer p-5 bg-stone-500 rounded-3xl hover:bg-stone-700">
           
-          <div className={styles.blogitem}>
+          <div className=" text-2xl">
             <h3>How to learn JavaScript in 2022?</h3>
           </div>
           <p>
@@ -58,9 +57,9 @@ export default function Home() {
           </p>
         </div>
 
-        <div className={styles.blogs}>
+        <div className="my-4 cursor-pointer p-5 bg-stone-500 rounded-3xl hover:bg-stone-700">
           
-          <div className={styles.blogitem}>
+          <div className=" text-2xl">
             <h3>How to learn JavaScript in 2022?</h3>
           </div>
           <p>
